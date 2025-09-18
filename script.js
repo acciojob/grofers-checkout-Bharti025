@@ -4,9 +4,9 @@ document.body.appendChild(getSumBtn);
 
 const getSum = () => {
 	let sum=0;
-let prices=document.getElementsByClassName("price");
+let prices=document.getElementsByClassName("prices");
    for(let i=0; i<prices.length; i++){
-        sum += parseInt(prices[i].textContent);
+        sum += parseFloat(prices[i].textContent);
    }
   const table = document.querySelector("table"); // Assuming there's a table element
     const newRow = table.insertRow(); // Insert a new row at the end of the table
